@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+{% for post in posts %}
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<h2>
+                <a {% if talk %}href="{{ url_for('main.talk',id=post[0]) }}"
+                   {% elif book %}href="{{ url_for('main.book',id=post[0]) }}"
+                   {% elif python %}href="{{ url_for('main.python',id=post[0])}}"
+                   {% endif %}>{{ post[1] }}</a>
+			</h2>
+			<p>
+                {{ post[2] | truncate(500) }}
+			</p>
+		</div>
+	</div>
+</div>
+<hr>
+{% endfor %}
+{% endblock%}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static',filename='animate.css') }}" type="text/css">
+{% endblock %}
+
+{% block page_content %}
+<div class="container" style="font-size:verdana">
+    <br>
+    <h1 align="center" style="color:#CDC9C9;font-size:96px;font-family:verdana">
+        老板，来杯大可乐！
+    </h1>
+    <br>
+    <br>
+    <br>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="jumbotron well">
+				<p >
+					 以前一直是用hexo来搭建博客，可是总感觉不爽，可选的布局就那么几样，有觉得难看的地方也改不了。
+                    于是就决定自己搞一个博客玩玩，老话说的好：自己动手，丰衣足食嘛！导航栏里的功能目前只开发了一两个，
+                    以后会逐步补充的~<br>
+                    生活不易，老板，来杯大可乐！
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-4 column">
+			<h3>
+                <a href="{{ url_for('main.book',id=book[0][0])}}">{{ book[0][1] }}</a>
+			</h3>
+			<p>
+                {{ book[0][2] | truncate(100) }}
+			</p>
+		</div>
+		<div class="col-md-4 column">
+			<h3>
+                <a href="{{ url_for('main.talk',id=talk[0][0]) }}">{{ talk[0][1] }}</a>
+			</h3>
+			<p>
+                {{ talk[0][2] | truncate(100) }}
+			</p>
+		</div>
+		<div class="col-md-4 column">
+			<h3>
+                <a href="{{url_for('main.python',id=python[0][0])}}">{{ python[0][1] }}</a>
+			</h3>
+			<p>
+                {{ python[0][2] | truncate(100) }}
+			</p>
+		</div>
+	</div>
+    <br>
+    <br>
+    {% block footer %}
+    <footer align="center">&copy;author:qiuyue since:2018 <br>
+        联系我：<a href="http://qiuyueqy.com">http://qiuyueqy.com</a>
+    </footer>
+    {% endblock %}
+</div>
+
+{% endblock %}
