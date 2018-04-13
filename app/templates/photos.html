@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+{% for album,urls in d.items() %}
+<h1 align="center">{{ album }}</h1>
+<br>
+{% for url in urls %}
+<img src="{{ url_for('static',filename=album~'_s/'~url) }}" alt="我的图片">
+<br>
+<hr>
+{% endfor %}
+{% endfor %}
+{% endblock %}
