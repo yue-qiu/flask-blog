@@ -28,7 +28,7 @@ CREATE TABLE `album` (
   `about` text,
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `album` (
 
 LOCK TABLES `album` WRITE;
 /*!40000 ALTER TABLE `album` DISABLE KEYS */;
-INSERT INTO `album` VALUES (16,'FordCar','赛车是男人的浪漫','2018-04-13 03:36:58'),(17,'Views','趁着青春年少，抓紧时间拍照','2018-04-13 03:37:40');
+INSERT INTO `album` VALUES (19,'FordCar','赛车是男人的浪漫','2018-04-14 15:49:20'),(20,'Views','趁着青春年少，抓紧时间拍照','2018-04-14 15:58:21'),(21,'GAME','那些游戏里的美好','2018-04-14 16:07:15');
 /*!40000 ALTER TABLE `album` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -81,7 +81,7 @@ CREATE TABLE `photos_s` (
   `url_s` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `p` (`album_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=249 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=363 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -90,7 +90,7 @@ CREATE TABLE `photos_s` (
 
 LOCK TABLES `photos_s` WRITE;
 /*!40000 ALTER TABLE `photos_s` DISABLE KEYS */;
-INSERT INTO `photos_s` VALUES (217,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\df446409cc.JPG'),(218,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\7b66aa5d4d.JPG'),(219,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\a37fac581e.JPG'),(220,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\95335f17d9.JPG'),(221,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\1b2e311330.jpg'),(222,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\2cb12c211f.jpg'),(223,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\a426338085.jpg'),(224,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\5d459a95d4.jpg'),(225,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\c1c1d76d35.jpg'),(226,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\0ca0d65409.jpg'),(227,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\2268522077.jpg'),(228,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\0b467fb96f.jpg'),(229,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\34a6b82970.jpg'),(230,17,'C:\\Users\\86728\\blog\\app\\static\\Views_s\\91d1e73d1f.jpg'),(231,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\e33f1528cc.jpg'),(232,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\281626c711.jpg'),(233,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\4efc41b9ed.jpg'),(234,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\c2b78e1e6b.jpg'),(235,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\d50c3d801d.jpg'),(236,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\8fad1d78c5.jpg'),(237,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\b44c592ed2.jpg'),(238,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\cfa58d744d.jpg'),(239,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\242bcba0be.jpg'),(240,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\cd64fe0a21.jpg'),(241,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\fb4e8fc5cb.jpg'),(242,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\242b97239f.jpg'),(243,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\5ea317206f.jpg'),(244,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\2227f27c13.jpg'),(245,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\c270e031ca.jpg'),(246,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\8f54192cf6.jpg'),(247,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\724a87cdcb.jpg'),(248,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_s\\35d9f8f6c5.jpg');
+INSERT INTO `photos_s` VALUES (321,19,'e33f1528cc.jpg'),(322,19,'281626c711.jpg'),(323,19,'4efc41b9ed.jpg'),(324,19,'c2b78e1e6b.jpg'),(325,19,'d50c3d801d.jpg'),(326,19,'8fad1d78c5.jpg'),(327,19,'b44c592ed2.jpg'),(328,19,'cfa58d744d.jpg'),(329,19,'242bcba0be.jpg'),(330,19,'cd64fe0a21.jpg'),(331,19,'fb4e8fc5cb.jpg'),(332,19,'242b97239f.jpg'),(333,19,'5ea317206f.jpg'),(334,19,'2227f27c13.jpg'),(335,19,'c270e031ca.jpg'),(336,19,'8f54192cf6.jpg'),(337,19,'724a87cdcb.jpg'),(338,19,'35d9f8f6c5.jpg'),(339,20,'df446409cc.JPG'),(340,20,'7b66aa5d4d.JPG'),(341,20,'a37fac581e.JPG'),(342,20,'95335f17d9.JPG'),(343,20,'1b2e311330.jpg'),(344,20,'2cb12c211f.jpg'),(345,20,'a426338085.jpg'),(346,20,'5d459a95d4.jpg'),(347,20,'c1c1d76d35.jpg'),(348,20,'0ca0d65409.jpg'),(349,20,'2268522077.jpg'),(350,20,'0b467fb96f.jpg'),(351,20,'34a6b82970.jpg'),(352,20,'91d1e73d1f.jpg'),(353,21,'2b9b19e08a.jpg'),(354,21,'d6518cb1b5.jpg'),(355,21,'71f1595060.jpg'),(356,21,'adafff23fe.jpg'),(357,21,'52e039302a.jpg'),(358,21,'b01dba3a36.jpg'),(359,21,'d81c52f524.jpg'),(360,21,'4be5aa7526.jpg'),(361,21,'037066dfb0.jpg'),(362,21,'c13cf5d7cd.jpg');
 /*!40000 ALTER TABLE `photos_s` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -107,7 +107,7 @@ CREATE TABLE `photos_t` (
   `url_t` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `p` (`album_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -116,7 +116,7 @@ CREATE TABLE `photos_t` (
 
 LOCK TABLES `photos_t` WRITE;
 /*!40000 ALTER TABLE `photos_t` DISABLE KEYS */;
-INSERT INTO `photos_t` VALUES (25,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_t\\cd64fe0a21.jpg'),(26,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_t\\5ea317206f.jpg'),(27,16,'C:\\Users\\86728\\blog\\app\\static\\FordCar_t\\c270e031ca.jpg'),(28,17,'C:\\Users\\86728\\blog\\app\\static\\Views_t\\c1c1d76d35.jpg'),(29,17,'C:\\Users\\86728\\blog\\app\\static\\Views_t\\0ca0d65409.jpg'),(30,17,'C:\\Users\\86728\\blog\\app\\static\\Views_t\\2268522077.jpg');
+INSERT INTO `photos_t` VALUES (37,19,'cd64fe0a21.jpg'),(38,19,'5ea317206f.jpg'),(39,19,'c270e031ca.jpg'),(40,20,'c1c1d76d35.jpg'),(41,20,'0ca0d65409.jpg'),(42,20,'2268522077.jpg'),(43,21,'4be5aa7526.jpg'),(44,21,'037066dfb0.jpg'),(45,21,'c13cf5d7cd.jpg');
 /*!40000 ALTER TABLE `photos_t` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -183,4 +183,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-14 20:29:34
+-- Dump completed on 2018-04-15  0:14:10

@@ -5,7 +5,7 @@
 <h1 align="center">{{ album }}</h1>
 <br>
 {% for url in urls %}
-<img src="{{ url_for('static',filename=album~'_s/'~url) }}" alt="我的图片">
+<img src="{{ url_for('static',filename=album~'_s/'~url[0]) }}" alt="我的图片">
 <br>
 <hr>
 {% endfor %}

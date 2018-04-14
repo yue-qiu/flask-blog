@@ -1,7 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7f13528-79b6-4be1-b66a-af4935f97fd9" name="Default" comment="" />
+    <list default="true" id="f7f13528-79b6-4be1-b66a-af4935f97fd9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addPic.py" beforeDir="false" afterPath="$PROJECT_DIR$/addPic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/2227f27c13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/242b97239f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/242bcba0be.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/281626c711.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/35d9f8f6c5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/4efc41b9ed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/5ea317206f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/724a87cdcb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/8f54192cf6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/8fad1d78c5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/b44c592ed2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/c270e031ca.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/c2b78e1e6b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/cd64fe0a21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/cfa58d744d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/d50c3d801d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/e33f1528cc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_s/fb4e8fc5cb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_t/5ea317206f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_t/c270e031ca.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/FordCar_t/cd64fe0a21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/0b467fb96f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/0ca0d65409.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/1b2e311330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/2268522077.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/2cb12c211f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/34a6b82970.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/5d459a95d4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/7b66aa5d4d.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/91d1e73d1f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/95335f17d9.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/a37fac581e.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/a426338085.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/c1c1d76d35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_s/df446409cc.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_t/0ca0d65409.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_t/2268522077.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Views_t/c1c1d76d35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/photos.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/photos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,15 +56,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/blog$blog.coverage" NAME="blog Coverage Results" MODIFIED="1523631027040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/blog$blog.coverage" NAME="blog Coverage Results" MODIFIED="1523722242676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="show.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="79" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
+            <state relative-caret-position="266">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -29,7 +75,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="285">
               <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
             </state>
           </provider>
@@ -64,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            <state relative-caret-position="114">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -85,17 +131,17 @@
       <file leaf-file-name="photos.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/photos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="133">
+              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/main/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2033">
-              <caret line="107" column="27" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
+            <state relative-caret-position="-134">
+              <caret line="89" column="42" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -106,8 +152,8 @@
       <file leaf-file-name="addPic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addPic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="64" column="92" selection-start-line="64" selection-start-column="92" selection-end-line="64" selection-end-column="92" />
+            <state relative-caret-position="379">
+              <caret line="65" column="59" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -145,12 +191,12 @@
         <option value="$PROJECT_DIR$/app/addPic.py" />
         <option value="$PROJECT_DIR$/app/static/blog.css" />
         <option value="$PROJECT_DIR$/app/templates/index.html" />
-        <option value="$PROJECT_DIR$/app/main/views.py" />
-        <option value="$PROJECT_DIR$/addPic.py" />
-        <option value="$PROJECT_DIR$/app/templates/show.html" />
-        <option value="$PROJECT_DIR$/app/templates/photos.html" />
         <option value="$PROJECT_DIR$/app/templates/base.html" />
         <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/app/templates/photos.html" />
+        <option value="$PROJECT_DIR$/app/templates/show.html" />
+        <option value="$PROJECT_DIR$/app/main/views.py" />
+        <option value="$PROJECT_DIR$/addPic.py" />
         <option value="$PROJECT_DIR$/manage.py" />
       </list>
     </option>
@@ -192,6 +238,12 @@
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -313,7 +365,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32872927" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12695312" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12695312" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -655,33 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addPic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="64" column="92" selection-start-line="64" selection-start-column="92" selection-end-line="64" selection-end-column="92" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="79" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/photos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/post.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -712,27 +737,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
+    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="285">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/app/templates/photos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="133">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/main/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2033">
-          <caret line="107" column="27" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
+        <state relative-caret-position="-134">
+          <caret line="89" column="42" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addPic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="65" column="59" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

@@ -87,7 +87,7 @@ def Album():
     for album in albums:
         cur.execute('select url_t from photos_t where album_id=%s',album[0])
         urls = cur.fetchall()
-        d[album] = [os.path.split(file[0])[1] for file in urls]
+        d[album] = [file for file in urls]
     return render_template('show.html',d=d)
 
 @main.route('/album/<album_id>')
@@ -99,7 +99,7 @@ def photos(album_id):
     urls = cur.fetchall()
     cur.execute('select title from album where id=%s',album_id)
     album = cur.fetchone()
-    d[album[0]] = [os.path.split(file[0])[1] for file in urls]
+    d[album[0]] = [file for file in urls]
     cur.close()
     con.commit()
     con.close()

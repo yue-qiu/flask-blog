@@ -19,14 +19,14 @@
 				<div class="carousel-inner">
 					<div class="item active">
                         <a href="{{ url_for('main.photos',album_id=album[0]) }}">
-                            <img alt="" src="{{ url_for('static',filename=album[1]~'_t/'~urls[0]) }}" /></a>
+                            <img alt="" src="{{ url_for('static',filename=album[1]~'_t/'~urls[0][0]) }}" /></a>
 						<div class="carousel-caption">
 						</div>
 					</div>
                     {% for url in urls[1:3] %}
 					<div class="item">
                         <a href="{{ url_for('main.photos',album_id=album[0]) }}">
-                            <img alt="" src="{{ url_for('static',filename=album[1]~'_t/'~url) }}" /></a>
+                            <img alt="" src="{{ url_for('static',filename=album[1]~'_t/'~url[0]) }}" /></a>
 						<div class="carousel-caption">
 						</div>
 					</div>
