@@ -2,16 +2,13 @@
 
 {% block page_content %}
 {% for post in posts %}
-<div class="container">
+<div class="container" style="font-family:verdana">
 	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<h2>
-                <a {% if talk %}href="{{ url_for('main.talk',id=post[0]) }}"
-                   {% elif book %}href="{{ url_for('main.book',id=post[0]) }}"
-                   {% elif python %}href="{{ url_for('main.python',id=post[0])}}"
-                   {% endif %}>{{ post[1] }}</a>
+        <div class="col-md-12 column">
+        <h2 style="text-align: center">
+                <a href="{{ url_for('main.text',id=post[0]) }}" style="color: #0f0f0f">{{ post[1] }}</a>
 			</h2>
-			<p>
+			<p style="color: #8c8c8c">
                 {{ post[2] | truncate(500) }}
 			</p>
 		</div>

@@ -8,14 +8,14 @@
 {% block page_content %}
 <div class="container" style="font-family:verdana">
     <br>
-    <h1 align="center" style="color:#CDC9C9;font-size:96px;font-family:verdana">
+    <br>
+    <h1 align="center" style="color:#CDC9C9;font-size:120px;font-family:'Verdana Pro'" class="animated bounceInDown">
         老板，来杯大可乐！
     </h1>
     <br>
     <br>
-    <br>
 	<div class="row clearfix">
-		<div class="col-md-12 column">
+		<div class="col-md-12 column animated fadeIn">
 			<div class="jumbotron well">
 				<p >
 					 以前一直是用hexo来搭建博客，可是总感觉不爽，可选的布局就那么几样，有觉得难看的地方也改不了。
@@ -27,28 +27,28 @@
 		</div>
 	</div>
 	<div class="row clearfix">
-		<div class="col-md-4 column">
+		<div class="col-md-4 column animated fadeIn">
 			<h3>
-                <a href="{{ url_for('main.book',id=book[0][0])}}">{{ book[0][1] }}</a>
+                <a href="{{ url_for('main.text',id=book[0][0])}}">{{ book[0][1] }}</a>
 			</h3>
 			<p>
-                {{ book[0][2] | truncate(100) }}
+                {{ book[0][2] | truncate(200) }}
 			</p>
 		</div>
-		<div class="col-md-4 column">
+		<div class="col-md-4 column animated fadeIn">
 			<h3>
-                <a href="{{ url_for('main.talk',id=talk[0][0]) }}">{{ talk[0][1] }}</a>
+                <a href="{{ url_for('main.text',id=talk[0][0]) }}">{{ talk[0][1] }}</a>
 			</h3>
 			<p>
-                {{ talk[0][2] | truncate(100) }}
+                {{ talk[0][2]| truncate(200)}}
 			</p>
 		</div>
-		<div class="col-md-4 column">
+		<div class="col-md-4 column animated fadeIn">
 			<h3>
-                <a href="{{url_for('main.python',id=python[0][0])}}">{{ python[0][1] }}</a>
+                <a href="{{url_for('main.text',id=python[0][0])}}">{{ python[0][1] }}</a>
 			</h3>
 			<p>
-                {{ python[0][2] | truncate(100) }}
+                {{ python[0][2] | truncate(200) }}
 			</p>
 		</div>
 	</div>

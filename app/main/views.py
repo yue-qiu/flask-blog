@@ -8,74 +8,35 @@ from .. import photos
 def index():
     con = pymysql.connect(host='localhost',user='root',passwd='A19990701',db='blog',port=3306,charset='utf8mb4')
     cur = con.cursor()
-    cur.execute('select * from talk where id=1')
+    cur.execute('select * from Text where title=%s',('Flask学习'))
     talk = cur.fetchall()
-    cur.execute('select * from book where id=1')
+    cur.execute('select * from Text where title=%s',('进程与线程'))
     book = cur.fetchall()
-    cur.execute('select * from python where id=1')
+    cur.execute('select * from Text where title=%s',('一点感想'))
     python = cur.fetchall()
     cur.close()
     con.commit()
     con.close()
     return render_template('index.html',talk=talk,book=book,python=python)
 
-@main.route('/book/<int:id>')
-def book(id):
+@main.route('/text/<int:id>')
+def text(id):
     con = pymysql.connect(host='localhost',user='root',passwd='A19990701',db='blog',port=3306,charset='utf8mb4')
     cur = con.cursor()
     if id == 0:
-        cur.execute('select * from book')
-        books = cur.fetchall()
+        cur.execute('select * from Text')
+        posts = cur.fetchall()
         cur.close()
         con.commit()
         con.close()
-        return render_template('post.html',posts=books,book=1)
+        return render_template('post.html',posts=posts)
     else:
-        cur.execute('select * from book where id=%s',id)
-        book = cur.fetchall()
+        cur.execute('select * from Text where id=%s',id)
+        post = cur.fetchall()
         cur.close()
         con.commit()
         con.close()
-        return render_template('text.html',post=book)
-
-
-@main.route('/talk/<int:id>')
-def talk(id):
-    con = pymysql.connect(host='localhost',user='root',passwd='A19990701',db='blog',port=3306,charset='utf8mb4')
-    cur = con.cursor()
-    if id == 0:
-        cur.execute('select * from talk')
-        talks = cur.fetchall()
-        cur.close()
-        con.commit()
-        con.close()
-        return render_template('post.html',posts=talks,talk=1)
-    else:
-        cur.execute('select * from talk where id=%s',id)
-        talk = cur.fetchall()
-        cur.close()
-        con.commit()
-        con.close()
-        return render_template('text.html',post=talk)
-
-@main.route('/python/<int:id>')
-def python(id):
-    con = pymysql.connect(host='localhost',user='root',passwd='A19990701',db='blog',port=3306,charset='utf8mb4')
-    cur = con.cursor()
-    if id == 0:
-        cur.execute('select * from python')
-        pythons = cur.fetchall()
-        cur.close()
-        con.commit()
-        con.close()
-        return render_template('post.html',posts=pythons,python=1)
-    else:
-        cur.execute('select * from python where id=%s',id)
-        python = cur.fetchall()
-        cur.close()
-        con.commit()
-        con.close()
-        return render_template('text.html',post=python)
+        return render_template('text.html',post=post)
 
 @main.route('/album')
 def Album():

@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block page_content %}
-<div class="container">
+<div class="container" style="font-family:verdana">
 	<div class="row clearfix">
 		<div class="col-md-12 column" style="font-family:verdana">
             {% for album,urls in d.items() %}
-            <a href="{{ url_for('main.photos',album_id=album[0]) }}"><h3 align="center">{{ album[1] }}</h3></a>
-            <span><p align="center">{{ album[2] }}</p><p align="right">上传于：{{ album[3] }}</p></span>
+            <a href="{{ url_for('main.photos',album_id=album[0]) }}"><h3 align="center" style="color: #0f0f0f">{{ album[1] }}</h3></a>
+            <span><p align="center" style="color: #5e5e5e">{{ album[2] }}</p><p align="right">上传于：{{ album[3] }}</p></span>
 			<div class="carousel slide" id={{"carousel-"~album[0]}}>
 				<ol class="carousel-indicators">
 					<li class="active" data-slide-to="0" data-target={{"#carousel-"~album[0]}}>
