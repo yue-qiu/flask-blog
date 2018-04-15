@@ -6,10 +6,10 @@
 {% endblock %}
 
 {% block page_content %}
-<div class="container" style="font-family:verdana">
+
     <br>
     <br>
-    <h1 align="center" style="color:#CDC9C9;font-size:120px;font-family:'Verdana Pro'" class="animated bounceInDown">
+    <h1 align="center" style="color:#CDC9C9;font-size:100px;font-family:'Verdana Pro'" class="animated bounceInDown">
         老板，来杯大可乐！
     </h1>
     <br>
@@ -27,7 +27,7 @@
 	</div>
 	<div class="row clearfix">
 		<div class="col-md-4 column animated fadeIn">
-			<h3>
+			<h3 style="font-size: 30px">
                 <a href="{{ url_for('main.text',id=book[0][0])}}">{{ book[0][1] }}</a>
 			</h3>
 			<p>
@@ -35,7 +35,7 @@
 			</p>
 		</div>
 		<div class="col-md-4 column animated fadeIn">
-			<h3>
+			<h3 style="font-size: 30px">
                 <a href="{{ url_for('main.text',id=talk[0][0]) }}">{{ talk[0][1] }}</a>
 			</h3>
 			<p>
@@ -43,7 +43,7 @@
 			</p>
 		</div>
 		<div class="col-md-4 column animated fadeIn">
-			<h3>
+			<h3 style="font-size: 30px">
                 <a href="{{url_for('main.text',id=python[0][0])}}">{{ python[0][1] }}</a>
 			</h3>
 			<p>
@@ -53,11 +53,4 @@
 	</div>
     <br>
     <br>
-    {% block footer %}
-    <footer align="center">&copy;author:qiuyue since:2018 <br>
-        联系我：<a href="http://qiuyueqy.com">http://qiuyueqy.com</a>
-    </footer>
-    {% endblock %}
-</div>
-
 {% endblock %}

@@ -28,7 +28,7 @@ CREATE TABLE `album` (
   `about` text,
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `album` (
 
 LOCK TABLES `album` WRITE;
 /*!40000 ALTER TABLE `album` DISABLE KEYS */;
-INSERT INTO `album` VALUES (19,'FordCar','赛车是男人的浪漫','2018-04-14 15:49:20'),(20,'Views','趁着青春年少，抓紧时间拍照','2018-04-14 15:58:21'),(21,'GAME','那些游戏里的美好','2018-04-14 16:07:15');
+INSERT INTO `album` VALUES (22,'GAME','那些游戏里的美好','2018-04-15 15:06:42'),(23,'Views','趁着青春年少，抓紧时间拍照','2018-04-15 15:07:53'),(24,'FordCar','汽车是男人的浪漫','2018-04-15 15:09:14');
 /*!40000 ALTER TABLE `album` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -81,7 +81,7 @@ CREATE TABLE `photos_s` (
   `url_s` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `p` (`album_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=363 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=465 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -90,7 +90,7 @@ CREATE TABLE `photos_s` (
 
 LOCK TABLES `photos_s` WRITE;
 /*!40000 ALTER TABLE `photos_s` DISABLE KEYS */;
-INSERT INTO `photos_s` VALUES (321,19,'e33f1528cc.jpg'),(322,19,'281626c711.jpg'),(323,19,'4efc41b9ed.jpg'),(324,19,'c2b78e1e6b.jpg'),(325,19,'d50c3d801d.jpg'),(326,19,'8fad1d78c5.jpg'),(327,19,'b44c592ed2.jpg'),(328,19,'cfa58d744d.jpg'),(329,19,'242bcba0be.jpg'),(330,19,'cd64fe0a21.jpg'),(331,19,'fb4e8fc5cb.jpg'),(332,19,'242b97239f.jpg'),(333,19,'5ea317206f.jpg'),(334,19,'2227f27c13.jpg'),(335,19,'c270e031ca.jpg'),(336,19,'8f54192cf6.jpg'),(337,19,'724a87cdcb.jpg'),(338,19,'35d9f8f6c5.jpg'),(339,20,'df446409cc.JPG'),(340,20,'7b66aa5d4d.JPG'),(341,20,'a37fac581e.JPG'),(342,20,'95335f17d9.JPG'),(343,20,'1b2e311330.jpg'),(344,20,'2cb12c211f.jpg'),(345,20,'a426338085.jpg'),(346,20,'5d459a95d4.jpg'),(347,20,'c1c1d76d35.jpg'),(348,20,'0ca0d65409.jpg'),(349,20,'2268522077.jpg'),(350,20,'0b467fb96f.jpg'),(351,20,'34a6b82970.jpg'),(352,20,'91d1e73d1f.jpg'),(353,21,'2b9b19e08a.jpg'),(354,21,'d6518cb1b5.jpg'),(355,21,'71f1595060.jpg'),(356,21,'adafff23fe.jpg'),(357,21,'52e039302a.jpg'),(358,21,'b01dba3a36.jpg'),(359,21,'d81c52f524.jpg'),(360,21,'4be5aa7526.jpg'),(361,21,'037066dfb0.jpg'),(362,21,'c13cf5d7cd.jpg');
+INSERT INTO `photos_s` VALUES (423,24,'e33f1528cc.jpg'),(424,24,'281626c711.jpg'),(425,24,'4efc41b9ed.jpg'),(426,24,'c2b78e1e6b.jpg'),(427,24,'d50c3d801d.jpg'),(428,24,'8fad1d78c5.jpg'),(429,24,'b44c592ed2.jpg'),(430,24,'cfa58d744d.jpg'),(431,24,'242bcba0be.jpg'),(432,24,'cd64fe0a21.jpg'),(433,24,'fb4e8fc5cb.jpg'),(434,24,'242b97239f.jpg'),(435,24,'5ea317206f.jpg'),(436,24,'2227f27c13.jpg'),(437,24,'c270e031ca.jpg'),(438,24,'8f54192cf6.jpg'),(439,24,'724a87cdcb.jpg'),(440,24,'35d9f8f6c5.jpg'),(441,23,'df446409cc.JPG'),(442,23,'7b66aa5d4d.JPG'),(443,23,'a37fac581e.JPG'),(444,23,'95335f17d9.JPG'),(445,23,'1b2e311330.jpg'),(446,23,'2cb12c211f.jpg'),(447,23,'a426338085.jpg'),(448,23,'5d459a95d4.jpg'),(449,23,'c1c1d76d35.jpg'),(450,23,'0ca0d65409.jpg'),(451,23,'2268522077.jpg'),(452,23,'0b467fb96f.jpg'),(453,23,'34a6b82970.jpg'),(454,23,'91d1e73d1f.jpg'),(455,22,'2b9b19e08a.jpg'),(456,22,'d6518cb1b5.jpg'),(457,22,'71f1595060.jpg'),(458,22,'adafff23fe.jpg'),(459,22,'52e039302a.jpg'),(460,22,'b01dba3a36.jpg'),(461,22,'d81c52f524.jpg'),(462,22,'4be5aa7526.jpg'),(463,22,'037066dfb0.jpg'),(464,22,'c13cf5d7cd.jpg');
 /*!40000 ALTER TABLE `photos_s` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -107,7 +107,7 @@ CREATE TABLE `photos_t` (
   `url_t` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `p` (`album_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -116,7 +116,7 @@ CREATE TABLE `photos_t` (
 
 LOCK TABLES `photos_t` WRITE;
 /*!40000 ALTER TABLE `photos_t` DISABLE KEYS */;
-INSERT INTO `photos_t` VALUES (37,19,'cd64fe0a21.jpg'),(38,19,'5ea317206f.jpg'),(39,19,'c270e031ca.jpg'),(40,20,'c1c1d76d35.jpg'),(41,20,'0ca0d65409.jpg'),(42,20,'2268522077.jpg'),(43,21,'4be5aa7526.jpg'),(44,21,'037066dfb0.jpg'),(45,21,'c13cf5d7cd.jpg');
+INSERT INTO `photos_t` VALUES (46,22,'4be5aa7526.jpg'),(47,22,'037066dfb0.jpg'),(48,22,'c13cf5d7cd.jpg'),(49,23,'c1c1d76d35.jpg'),(50,23,'0ca0d65409.jpg'),(51,23,'2268522077.jpg'),(52,24,'cd64fe0a21.jpg'),(53,24,'5ea317206f.jpg'),(54,24,'c270e031ca.jpg');
 /*!40000 ALTER TABLE `photos_t` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -210,4 +210,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-15 17:54:40
+-- Dump completed on 2018-04-15 23:30:00

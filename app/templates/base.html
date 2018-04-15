@@ -6,27 +6,31 @@
 {{ super() }}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='blog.css') }}">
 <link rel="icon" href="{{ url_for('static',filename='blog.ico') }}" type="image/x-icon>">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="{{url_for('static',filename='materialize/css/materialize.min.css') }}"  media="screen,projection"/>
 {% endblock %}
 
 {% block navbar %}
-<nav class="navbar navbar-default" role="navigation">
-	<div class="container-fluid">
-	<div class="navbar-header">
-		<a class="navbar-brand" href="{{ url_for('main.index') }}">大可的博客</a>
-	</div>
-	<div>
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="{{ url_for('main.index') }}">首页</a></li>
-            <li><a href="{{ url_for('main.text',id=0) }}">文章</a></li>
-            <li><a href="{{ url_for('main.Album') }}">相册</a></li>
-		</ul>
-	</div>
-	</div>
-</nav>
+ <nav>
+    <div class="nav-wrapper" style="background-color: #212121">
+      <a href="{{ url_for('main.index') }}" class="brand-logo">可乐屋</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{{ url_for('main.text',id=0) }}">文章</a></li>
+        <li><a href="{{ url_for('main.Album') }}">相册</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>
 {% endblock %}
 
 {% block content %}
-<div class="container">
         <main>
     {% for message in get_flashed_messages() %}
         <div class="alert alert-info">
@@ -36,8 +40,41 @@
 
     {% block page_content %}{% endblock %}
         </div>
-    <br>
-    <br>
+
         </main>
-</div>
+            <footer class="page-footer" style="background-color: #212121">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">关于作者</h5>
+                <p class="grey-text text-lighten-4">大可,一名成长中的小小程序猿,Web开发学习中</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">链接</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="http://qiuyueqy.com" target="_blank">主站</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://github.com/yue-qiu" target="_blank">GitHub</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.zhihu.com/people/qiu-yue-37-3/activities" target="_blank">知乎</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container" style="text-align: center">
+            © 2018 Copyright Text
+            </div>
+          </div>
+        </footer>
+<script type="text/javascript" src="{{ url_for('static',filename='materialize/js/materialize.min.js')}}"></script>
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+ var elem = document.querySelector('.sidenav');
+  var instance = M.Sidenav.init(elem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
 {% endblock %}

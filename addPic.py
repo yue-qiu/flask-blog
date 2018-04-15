@@ -30,7 +30,7 @@ class Upload:
             newname = hashlib.md5(filename.encode('utf-8')).hexdigest()[:10]+'.'+ext
             shutil.copyfile(oldname,os.path.join(uri,newname))
             img = Image.open(os.path.join(uri, newname))
-            img = img.resize((1200, 650),Image.ANTIALIAS)
+            img = img.resize((1500, 840),Image.ANTIALIAS)
             img.save(os.path.join(uri, newname))
             cur.execute('insert into photos_s values (null,%s,%s)', (album_id[0], newname))
         cur.close()
@@ -53,7 +53,7 @@ class Upload:
             newname = hashlib.md5(filename.encode('utf-8')).hexdigest()[:10]+'.'+ext
             shutil.copyfile(oldname,os.path.join(uri,newname))
             img = Image.open(os.path.join(uri, newname))
-            img = img.resize((1200, 300),Image.ANTIALIAS)
+            img = img.resize((1200, 400),Image.ANTIALIAS)
             img.save(os.path.join(uri, newname))
             cur.execute('insert into photos_t values (null,%s,%s)', (album_id[0], newname))
         cur.close()
@@ -61,6 +61,6 @@ class Upload:
         con.close()
 
 Upload = Upload()
-#Upload.newAlbum('GAME', '那些游戏里的美好')
+#Upload.newAlbum('FordCar', '汽车是男人的浪漫')
 Upload.newPhotos_s('GAME', r'C:\Users\86728\Pictures\GAME')
-Upload.newPhotos_t('GAME', r'C:\Users\86728\Pictures\GAME_t')
+#Upload.newPhotos_t('FordCar', r'E:\壁纸\2018 GeigerCars Ford F-150（福特猛禽） Raptor EcoBoost HP520_t')

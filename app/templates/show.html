@@ -1,42 +1,29 @@
 {% extends "base.html" %}
 
 {% block page_content %}
-<div class="container" style="font-family:verdana">
+<div class="container">
 	<div class="row clearfix">
-		<div class="col-md-12 column" style="font-family:verdana">
+		<div class="col-md-12 column">
             {% for album,urls in d.items() %}
-            <a href="{{ url_for('main.photos',album_id=album[0]) }}"><h3 align="center" style="color: #0f0f0f">{{ album[1] }}</h3></a>
-            <span><p align="center" style="color: #5e5e5e">{{ album[2] }}</p><p align="right">上传于：{{ album[3] }}</p></span>
-			<div class="carousel slide" id={{"carousel-"~album[0]}}>
-				<ol class="carousel-indicators">
-					<li class="active" data-slide-to="0" data-target={{"#carousel-"~album[0]}}>
-					</li>
-					<li data-slide-to="1" data-target={{"#carousel-"~album[0]}}>
-					</li>
-					<li data-slide-to="2" data-target={{"#carousel-"~album[0]}}>
-					</li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="item active">
-                        <a href="{{ url_for('main.photos',album_id=album[0]) }}">
-                            <img alt="" src="{{ url_for('static',filename=album[1]~'_t/'~urls[0][0]) }}" /></a>
-						<div class="carousel-caption">
-						</div>
-					</div>
-                    {% for url in urls[1:3] %}
-					<div class="item">
-                        <a href="{{ url_for('main.photos',album_id=album[0]) }}">
-                            <img alt="" src="{{ url_for('static',filename=album[1]~'_t/'~url[0]) }}" /></a>
-						<div class="carousel-caption">
-						</div>
-					</div>
-                    {% endfor %}
-				</div> <a class="left carousel-control" href={{"#carousel-"~album[0]}} data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href={{"#carousel-"~album[0]}} data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
+
+              <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{{ url_for('static',filename=album[1]~'_t/'~urls[0][0]) }}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">{{ album[1] }}<i class="material-icons right"><a class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons">add</i></a>
+      </i></span>
+      <p><a href="{{ url_for('main.photos',album_id=album[0]) }}">进入相册</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4" style="text-align: center">{{ album[1] }}<i class="material-icons right">close</i></span>
+      <p style="text-align: center">{{ album[2] }}</p>
+    </div>
+  </div>
             <hr>
             {% endfor %}
             <hr>
 		</div>
 	</div>
-</div>
+    </div>
 {% endblock %}
