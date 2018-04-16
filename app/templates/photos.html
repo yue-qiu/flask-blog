@@ -2,6 +2,7 @@
 
 {% block page_content %}
 {% for album,urls in d.items() %}
+<div class="container-fluid">
 <h1 align="center">{{ album }}</h1>
 <br>
 {% for url in urls %}
@@ -12,4 +13,5 @@
 <hr>
 {% endfor %}
 {% endfor %}
+</div>
 {% endblock %}
