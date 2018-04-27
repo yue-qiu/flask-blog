@@ -32,17 +32,16 @@
 {% endblock %}
 
 {% block content %}
-        <main>
+     <body>
     {% for message in get_flashed_messages() %}
         <div class="alert alert-info">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         {{ message }}
             {% endfor %}
-
-            {% block page_content %}{% endblock %}
+            {% block page_content %}
+            {% endblock %}
         </div>
 
-        </main>
             <footer class="page-footer" style="background-color: #212121">
           <div class="container">
             <div class="row">
@@ -66,6 +65,7 @@
             </div>
           </div>
         </footer>
+    </body>
 {% endblock %}
 
 {% block scripts %}
